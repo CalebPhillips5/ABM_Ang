@@ -1,0 +1,69 @@
+########## Name of the mesh to read #####################################
+mesh_name = circle.msh
+
+########## Print screen information 1/0 #################################
+verbose = 1
+
+########## Should the code read the mesh 1/0 ############################
+read_mesh = 1
+read_solution = 0
+init_timestep = 3500
+
+########## Model Characteristics ########################################
+max_tip_cells = 100 
+deactivation = 0 # 0 for deactivation, 1 for no deactivation
+unbreakable = 0 # 1 for unbreakable, 0 for breakable
+anastomosis = 0 # 0 for anastomosis, 1 for not
+
+########## Type of ic 3 = endothelial / 2 = confluence / 1 = healthy / 0 = just tumor #####
+ic_type = 3
+initial_tum = 30
+initial_con = 0.05
+
+########## Maximum number of time steps #################################
+n_timesteps = 4000
+
+########## Print every print_inter number of time steps #################
+print_inter = 500
+
+########## Diameter of the domain #######################################
+domain_diameter = 1010
+
+########## Number of elements ###########################################
+n_elements = 40
+
+########## Nutrient diffusion coefficient ###############################
+nut_d = 200
+
+########## Oxygen consumption from background, tumor and normoxic #######
+con_b = 0.00
+con_t = 0.43
+con_n = 0.001
+
+########## Time step size ###############################################
+time_step = 0.05
+
+########## Cell-cell coefficients #######################################
+c_ccr = 10.0
+c_eer = 1.0
+c_tta = 0.0 # 0.488836
+c_hha = 0.588836
+c_eea = 0.588836
+max_outside = 2000
+rand_seed = 5
+prol_intens = 0.52
+
+########## Cell-boundary 1 = cells outside / 0 = constant value #########
+k_var = 0
+k_val = 0.1
+
+########## Cell radius ##################################################
+nucleus_radius = 5.295
+cell_radius = 9.953
+action_prop = 1.214
+
+########## VEGF parameters ##############################################
+vegf_prod = 200.0
+vegf_cons = 3.0
+vegf_diff = 800.0
+vegf_ths = 0.1
