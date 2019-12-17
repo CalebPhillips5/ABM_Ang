@@ -31,3 +31,9 @@ cell_abm.c        - houses both update_states and compute_forces, the crux of th
 generate_figures  - generates the ABM figures
 options.in        - simulation settings (how many timesteps, where to restart, print solution, etc.)
 
+
+
+### Sensitivity Analysis
+To do the sensitivity analysis, run 'generate_random.C' to generate the matrix for the variance-based method. This will
+save everything in the 'files-A.txt','files-B.txt','files-C.txt'. Each line is a set of parameters that must be ran using the ABM model above. 'analyze.C' will do the analysis on the solutions output from the ABM model. Then 'run_res.sh' will create the figures of results of the sensitivities. 
+
